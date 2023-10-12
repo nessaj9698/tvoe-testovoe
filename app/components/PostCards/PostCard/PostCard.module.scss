@@ -1,0 +1,43 @@
+.postCardInner {
+    padding:0.75rem 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    p {
+        font-weight: 500;
+    }
+    .postLink {
+        margin-bottom: 1.5rem;
+        flex-grow:1;
+    }
+}
+
+.postMeta {
+    display:flex;
+    column-gap:0.25rem;
+    align-items:center;
+    margin-bottom: 0.5rem;
+    a {
+        background-color:#FF6B00;
+        font-size: 0.75rem;
+        color:#fff;
+        padding:0.25rem 0.5rem;
+        border-radius:1.25rem;
+    }
+    span {
+        color:#474747;
+        font-size: 0.75rem;
+    }
+}
+
+.reactionsWrapper {
+    display:flex;
+    column-gap:0.5rem;
+    .reactionItem {
+        display:flex;
+        column-gap:0.05rem;
+        align-items:center;
+        cursor:pointer;
+    }
+}
+

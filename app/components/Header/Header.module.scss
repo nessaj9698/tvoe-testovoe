@@ -1,0 +1,35 @@
+.siteHeader {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.25rem 0;
+    background-color:#FFF;
+    .container {
+        column-gap:1rem;
+    }
+}
+
+.headerLeftSide {
+    display:flex;
+    align-items:center;
+    column-gap:5.5625rem;
+}
+
+.widgetsWrapper {
+    display:flex;
+    column-gap:1.25rem;
+}
+
+.iconsWrapper {
+    display:flex;
+    column-gap:0.75rem;
+    img {
+        cursor:pointer;
+    }
+}
+
+@media (max-device-width:780px) {
+    .headerLeftSide {
+        overflow-x: scroll;
+    }
+}

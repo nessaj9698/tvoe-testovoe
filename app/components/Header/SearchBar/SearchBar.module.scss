@@ -1,0 +1,39 @@
+.searchBarWrapper {
+    position:relative;
+    display:flex;
+    align-items:center;
+    img {
+        position:relative;
+        z-index:2;
+    }
+    form {
+        height:100%;
+        position:absolute;
+        right:0;
+        animation: searchBarAnimation .2s alternate;
+        input[type="submit"] {
+            position:absolute;
+            right:0;
+            width:36px;
+            height:36px;
+            cursor:pointer;
+            opacity:0;
+            z-index:3;
+        }
+
+        input[type="search"] {
+            height:100%;
+            border:1px solid #FF6B00;
+            border-radius:2.5rem;
+            padding-left:1rem;
+        }
+    }
+}
+
+@keyframes searchBarAnimation {
+    from {
+        right:-100%;
+    } to {
+        right:0;
+    }
+}

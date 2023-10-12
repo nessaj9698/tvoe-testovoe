@@ -1,0 +1,11 @@
+.postsWrapper {
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+@media (max-device-width:790px) {
+    .postsWrapper > article > img {
+        height:100px;
+    }
+}

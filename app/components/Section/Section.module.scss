@@ -1,0 +1,54 @@
+.fullwidthSection {
+    width:100%;
+    border-radius:0.75rem;
+
+    article {
+        min-width:15.3125rem;
+        width:23%;
+        display:flex;
+        flex-wrap:wrap;
+        position:relative;
+        background-color:#F2F2F2;
+        border-radius:0.75rem; 
+        img {
+            width:100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        position:relative;
+        display:inline-block;
+        margin-bottom: 1.5rem;
+        padding:1rem 0 0 2rem;
+    }
+}
+
+.sectionWidthPadding {
+    padding:2rem
+}
+
+@media (max-device-width:1420px) {
+    .fullwidthSection article {
+        width:32%;
+    }
+}
+
+@media (max-device-width:1170px) {
+    .fullwidthSection article {
+        width:48%;
+    }
+}
+
+@media (max-device-width:525px) {
+    .fullwidthSection article {
+        min-width:unset;
+    }
+}
+
+@media (max-device-width:790px) {
+    .fullwidthSection h2 {
+        padding:1rem 0 0 0;
+    }
+}

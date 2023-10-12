@@ -1,0 +1,42 @@
+.sidebarMenu {
+    display:flex;
+    flex-direction:column;
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:1.5rem;
+    padding-bottom:1.5rem;
+    li {
+        padding:0.75rem 1.25rem;
+        border-radius:0.75rem;
+        display:flex;
+        align-items:center;
+        column-gap:0.75rem;
+    &.active {
+            background-color:#262626;
+            color:#fff;
+        }
+    }
+}
+
+@media (max-device-width:790px) {
+    .sidebarMenu  {
+      flex-direction:row;
+      overflow-x: scroll;
+      li {
+        padding:0.15rem 1rem;
+      }
+    }
+  }
+
+  @media (max-device-width:600px) {
+    .sidebarMenu  {
+      flex-direction:row;
+      overflow-x: scroll;
+      li {
+        padding:0.15rem 1rem;
+        img {
+            display:none;
+        }
+      }
+    }
+  }
